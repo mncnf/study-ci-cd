@@ -1,26 +1,12 @@
-// Package main is the entry point for this application.
+/*
+Copyright © 2025 NAME HERE <EMAIL ADDRESS>
+*/
 package main
 
 import (
-	"fmt"
-	"log"
-	"os"
+	"github.cm/mncnf/study-ci-cd/cmd"
 )
 
 func main() {
-	var name string
-
-	if len(os.Args) > 1 {
-		name = os.Args[1]
-	}
-
-	log.Println(greet(name))
-}
-
-func greet(name string) string {
-	if name == "" {
-		return "Hello, World!"
-	}
-
-	return fmt.Sprintf("Hello, %s!", name)
+	cmd.Execute()
 }

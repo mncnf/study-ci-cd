@@ -1,6 +1,9 @@
 version: "2"
 linters:
   default: all
+  disable:
+    - varnamelen # allow short var name
+    - depguard
   exclusions:
     paths:
       - _test\.go

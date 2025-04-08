@@ -1,7 +1,7 @@
 name: Go Linter
 
 on:
-  pull_request:
+  push:
 
 jobs:
   linter:
